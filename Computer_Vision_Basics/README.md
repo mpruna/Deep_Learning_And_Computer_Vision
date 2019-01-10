@@ -45,3 +45,14 @@ As the resolution gets better we can see an object in greater detail. Part of th
 It's hard to extract the object features when is dark.
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/scaling_limitations.png)
+
+
+Requirements for an artificial eye to convert a conventional vehicle into autonomous one
+
+Camera | Human Eye
+-|-
+Must provide 360° coverage around the vehicle. | 3D vision for 130° of the Field of view ‘blind-spot’
+Must identify objects in 3D close and far from the vehicle. | Only central 50° FOV is ‘high-resolution’, outside central zone,
+perception drops
+Must meet all requirements in various lighting/weather conditions. | Good performance in varying lighting conditions
+Process data in real-time. | Equivalent video ‘frame rate’ good in central zone, poor at peripheral vision
