@@ -142,7 +142,7 @@ primary colors.
 * The saturation dimension resembling various shades of brightly colored paint.
 * Value dimension resembling the mixture of those paints with varying amounts of black or white paint.
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/HSV_color_space.png)
 
 ### RGB TO HSV
 * The Hue color ranges from 0 to 180 (not 360) in OpenCV
@@ -153,4 +153,4 @@ primary colors.
     http://www.javascripter.net/faq/rgb2hsv.htm
 * Don’t forget the 1⁄2 factor in Hue!
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/rgb_to_hsv.png)
