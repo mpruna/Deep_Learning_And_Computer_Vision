@@ -108,5 +108,49 @@ information in total, i.e.: '24-bit colour'.
 * What if the lane colour is not white?
 * What if it is dark outside under different weather or lighting conditions?
 * What if outside is snowing and most of the environment is covered in white
+* What if there are no demarcation signs/lanes?
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/color_selection_chalenge.png)
+
+
+### Posible sollutions
+
+* A possible solution would be to detect edges
+* More features has to be extracted from the camera image using more sophisticated computer vision techniques.
+* Vehicles use LiDAR systems to create high resolution 3D digital maps of the surroundings.
+* Example: in ideal weather conditions, the car collects 2.8 million laser points per second to create the LiDAR map
+* This is equivalent to collecting up to 600 gigabytes of data per hour.
+* The car can utilize the map created of the commute during summertime to be used as a reference during winter
+time.
+
+
+### RGB color space
+
+* RGB color space is made of red, green, and blue and mixing them up can produce any color defined by those
+primary colors.
+* OpenCV stores color in the BGR format.
+* Let’s try some colors in paint!
+
+### HSV color space
+
+* HSV (Hue, Saturation & Value/Brightness) is a color space that stores color information in a cylindrical representation.
+* HSV color space aligns with the way human vision perceives color-making attributes.
+    * Hue – Color Value (0 – 179) (represents in a circular angle the actual color)
+    * Saturation – Vibrancy of color (0-255) (represents how vibrant is a color, more paint, the density of the paint)
+    * Value – Brightness or intensity (0-255) (represents the brightness)
+* Hue is arranged in a radial slice, around a central axis of neutral colors ranging from black at bottom to white at the top.
+* The saturation dimension resembling various shades of brightly colored paint.
+* Value dimension resembling the mixture of those paints with varying amounts of black or white paint.
+
+![IMG]()
+
+### RGB TO HSV
+* The Hue color ranges from 0 to 180 (not 360) in OpenCV
+    * Green – 45 to 75
+    * Red – 165 to 15
+    * Blue – 90 to 120
+*  Learn how to convert from RGB to HSV:
+    http://www.javascripter.net/faq/rgb2hsv.htm
+* Don’t forget the 1⁄2 factor in Hue!
+
+![IMG]()
