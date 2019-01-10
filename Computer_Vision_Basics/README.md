@@ -79,26 +79,26 @@ the wavelengths of yellow light.
 
 ### Representing an image on a gray scale
 
-• A greyscale image is system of 256 tones with values ranging from 0-255. 
-• '0' represents black and '255' represents white. 
-• Numbers in between represents greys between black and white.
-• Binary systems use digits '0' and '1‘ where '00000000' for black, to '11111111' for white (8-bit image).
-• Note: binary value of '11111111' is equal to decimal value of '255'
+* A greyscale image is system of 256 tones with values ranging from 0-255. 
+* '0' represents black and '255' represents white. 
+* Numbers in between represents greys between black and white.
+* Binary systems use digits '0' and '1‘ where '00000000' for black, to '11111111' for white (8-bit image).
+* Note: binary value of '11111111' is equal to decimal value of '255'
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gray_mona_lisa.png)
 
 ### Colored image representation
 
-• Each pixel coordinate (x, y) contains 3 values ranging for intensities of 0 to 255 (8-bit).
-• RGB image is split into 3 matrices corresponding to red, green, and blue channels.
-• Any other colour can be created by mixing several intensities of RGB.
+* Each pixel coordinate (x, y) contains 3 values ranging for intensities of 0 to 255 (8-bit).
+* RGB image is split into 3 matrices corresponding to red, green, and blue channels.
+* Any other colour can be created by mixing several intensities of RGB.
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/color_picture.png)
 
 ### Digitally represent a colored image
 
-• Each RGB pixel has three sets of 8-bit binary numbers which in turn translates into 24 bits of computer
+* Each RGB pixel has three sets of 8-bit binary numbers which in turn translates into 24 bits of computer
 information in total, i.e.: '24-bit colour'.
-• Assuming same number of pixels, RGB image is three times bigger in file size than a Greyscale one.
+* Assuming same number of pixels, RGB image is three times bigger in file size than a Greyscale one.
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/colored_image.png)
