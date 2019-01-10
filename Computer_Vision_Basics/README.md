@@ -68,3 +68,37 @@ Self driving cars have set of sensors that give perception of the world, and a m
 * LIDAR (Light Detection and Ranging): works like radar, but instead of sending radio waves it emits infrared laser beams to measure how long they take to come back. Creates a 3-D map of the world in real time.
 * Radars: sends radio waves to detect objects, reliable and cheaper than LIDAR systems.
 * GPS: Global positioning system provides information about current location of driverless car on the road using set of maps.
+
+### Representing images in digital format
+
+How human eye perceives an object:
+• Waves are observed by the human eye and translated in the visual cortex into color.
+• When you look at a banana, the wavelengths of reflected light determine what color you see.
+• The light waves reflect off the banana and hit your eye has a wavelengths of 570 to 580 nanometers. These are
+the wavelengths of yellow light.
+
+### Representing an image on a gray scale
+
+• A greyscale image is system of 256 tones with values ranging from 0-255. 
+• '0' represents black and '255' represents white. 
+• Numbers in between represents greys between black and white.
+• Binary systems use digits '0' and '1‘ where '00000000' for black, to '11111111' for white (8-bit image).
+• Note: binary value of '11111111' is equal to decimal value of '255'
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gray_mona_lisa.png)
+
+### Colored image representation
+
+• Each pixel coordinate (x, y) contains 3 values ranging for intensities of 0 to 255 (8-bit).
+• RGB image is split into 3 matrices corresponding to red, green, and blue channels.
+• Any other colour can be created by mixing several intensities of RGB.
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/color_picture.png)
+
+### Digitally represent a colored image
+
+• Each RGB pixel has three sets of 8-bit binary numbers which in turn translates into 24 bits of computer
+information in total, i.e.: '24-bit colour'.
+• Assuming same number of pixels, RGB image is three times bigger in file size than a Greyscale one.
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/colored_image.png)
