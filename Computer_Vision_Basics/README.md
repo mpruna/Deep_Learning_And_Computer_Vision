@@ -102,3 +102,11 @@ information in total, i.e.: '24-bit colour'.
 * Assuming same number of pixels, RGB image is three times bigger in file size than a Greyscale one.
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/colored_image.png)
+
+### Challenges of the color extracting technique for lane detection
+
+* What if the lane colour is not white?
+* What if it is dark outside under different weather or lighting conditions?
+* What if outside is snowing and most of the environment is covered in white
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/color_selection_chalenge.png)
