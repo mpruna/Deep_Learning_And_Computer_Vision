@@ -56,3 +56,15 @@ Must identify objects in 3D close and far from the vehicle. | Only central 50° 
 perception drops
 Must meet all requirements in various lighting/weather conditions. | Good performance in varying lighting conditions
 Process data in real-time. | Equivalent video ‘frame rate’ good in central zone, poor at peripheral vision
+
+Overall human eyes provide acceptable vision in a very narrow field of view facing forward.
+For the camera we would like to develop computer vision algorithms and machine learning algorithms to actually
+start  detect all kinds of objects and become even better than humans.
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/self_driving_car.png)
+
+Self driving cars have set of sensors that give perception of the world, and a machine learning algorithms to process sensors data and take actions.
+* Cameras : provides detailed images but require machine-learning algorithms to interpret 2-D images. 
+* LIDAR (Light Detection and Ranging): works like radar, but instead of sending radio waves it emits infrared laser beams to measure how long they take to come back. Creates a 3-D map of the world in real time.
+* Radars: sends radio waves to detect objects, reliable and cheaper than LIDAR systems.
+* GPS: Global positioning system provides information about current location of driverless car on the road using set of maps.
