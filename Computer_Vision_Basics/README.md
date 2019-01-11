@@ -154,3 +154,38 @@ primary colors.
 * Don’t forget the 1⁄2 factor in Hue!
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/rgb_to_hsv.png)
+
+### Convolutions:
+
+Convolutions use a kernel matrix to scan a given image and apply a filter to obtain a certain effect.
+* An image Kernel is a matrix used to apply effects such as blurring and sharpening.
+* Kernels are used in machine learning for feature extraction to select most important pixels of an image.
+* Convolution preserves the spatial relationship between pixels.
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.png)
+
+### Convolutions: Sharpening and Blurring:
+
+* The sharpen kernel emphasizes differences in adjacent pixel values which makes the image look more vivid.
+* The technique is used to bring out detail in an image by enhancing the contrast of pixels on edges.
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sharpen_matrix.png)
+
+* The blurring kernel is used to blur a given image by averaging each pixel value and its neighbors.
+* Blurring Kernel is an NxN matrix filled with ones. Normalization has to be performed.
+* The values in the matrix has to sum to 1, if sum doesn't add to 1 then image will be brighter or darker
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/blurring.png)
+
+
+### Convolutions definitions
+* Kernel Size: The kernel size defines the field of view of the convolution. A common choice for 2D is 3 — that is 3x3 pixels.
+* Stride: The stride defines the step size of the kernel when traversing the image. While its default is usually 1, we can use a stride of 2 for downsampling an image similar to MaxPooling.
+* Padding: The padding defines how the border of a sample is handled. A (half) padded convolution will keep the spatial output dimensions equal to the input, whereas unpadded convolutions will crop away some of the borders if the kernel is larger than 1.
+
+The spatial size of the output volume can be computed as a function of the input volume size W {\displaystyle W} W, the kernel field size of the convolutional layer neurons K {\displaystyle K} K, the stride with which they are applied S {\displaystyle S} S, and the amount of zero padding P {\displaystyle P} P used on the border. The formula for calculating how many neurons "fit" in a given volume is given by
+
+W − K + 2 P S + 1. {\displaystyle {\frac {W-K+2P}{S}}+1.}
+{\displaystyle {\frac {W-K+2P}{S}}+1.}
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.gif)
