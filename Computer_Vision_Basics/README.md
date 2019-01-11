@@ -189,3 +189,12 @@ W − K + 2 P S + 1. {\displaystyle {\frac {W-K+2P}{S}}+1.}
 {\displaystyle {\frac {W-K+2P}{S}}+1.}
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.gif)
+
+### Edge detection and gradient calculation
+
+* Edge detection is a tool that identifies points in a digital image at which the image brightness changes sharply or
+has discontinuities.
+* Edge detection is important tool in computer vision especially for feature extraction/detection
+* Below you can see a first grade edge detection where the pixel value chan change rapidly from either a bright color to a dark one pr vice-versa..
+
+![IMG]()
