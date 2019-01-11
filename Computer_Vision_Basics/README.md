@@ -184,9 +184,9 @@ Convolutions use a kernel matrix to scan a given image and apply a filter to obt
 * Stride: The stride defines the step size of the kernel when traversing the image. While its default is usually 1, we can use a stride of 2 for downsampling an image similar to MaxPooling.
 * Padding: The padding defines how the border of a sample is handled. A (half) padded convolution will keep the spatial output dimensions equal to the input, whereas unpadded convolutions will crop away some of the borders if the kernel is larger than 1.
 
-The spatial size of the output volume can be computed as a function of the input volume size W {\displaystyle W} W, the kernel field size of the convolutional layer neurons K {\displaystyle K} K, the stride with which they are applied S {\displaystyle S} S, and the amount of zero padding P {\displaystyle P} P used on the border. The formula for calculating how many neurons "fit" in a given volume is given by
+The spatial size of the output volume can be computed as a function of the input volume size `W`, the kernel field size of the convolutional layer neurons `K`, the stride with which they are applied `S`, and the amount of zero padding `P` used on the border. The formula for calculating how many neurons "fit" in a given volume is given by
 
-###Neural networks convolution formula
+### Neural networks convolution formula
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolution_neural_network.png)
 
