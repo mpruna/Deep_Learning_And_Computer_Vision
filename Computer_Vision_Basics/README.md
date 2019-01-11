@@ -188,7 +188,7 @@ The spatial size of the output volume can be computed as a function of the input
 
 ###Neural networks convolution formula
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_neural_network.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolution_neural_network.png)
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.gif)
 
