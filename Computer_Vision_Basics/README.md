@@ -162,7 +162,7 @@ Convolutions use a kernel matrix to scan a given image and apply a filter to obt
 * Kernels are used in machine learning for feature extraction to select most important pixels of an image.
 * Convolution preserves the spatial relationship between pixels.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions.png)
 
 ### Convolutions: Sharpening and Blurring:
 
