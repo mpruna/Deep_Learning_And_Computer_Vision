@@ -220,4 +220,4 @@ The x-coordinate is defined here as increasing in the "right"-direction, and the
 
 Using this information, we can also calculate the gradient's direction: 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png_
