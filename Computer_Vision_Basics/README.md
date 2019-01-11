@@ -188,6 +188,7 @@ The spatial size of the output volume can be computed as a function of the input
 
 ### Neural networks convolution formula
 
+
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolution_neural_network.png)
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.gif)
@@ -200,3 +201,23 @@ has discontinuities.
 * Below you can see a first grade edge detection where the pixel value chan change rapidly from either a bright color to a dark one pr vice-versa..
 
 ![IMG]()
+
+### Edge Detection and Gradient Descent calculation: Sobel method
+
+* Sobel edge detector is a gradient based method based on the first order derivatives.
+* It calculates the first derivatives of the image separately for X and Y axes.
+* Sobel uses two 3X3 kernels which are convolved with original image to calculate the derivatives.
+* For image A , G x and G y are two images representing horizontal and vertical derivative approximations
+
+If we define A as the source image, and Gx and Gy are two images which at each point contain the vertical and horizontal derivative approximations respectively.
+In theory at least, the operator consists of a pair of 3×3 convolution kernels as shown in Figure 1. One kernel is simply the other rotated by 90°. This is very similar to the Roberts Cross operator.
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_kernels.png)
+
+The x-coordinate is defined here as increasing in the "right"-direction, and the y-coordinate is defined as increasing in the "down"-direction. At each point in the image, the resulting gradient approximations can be combined to give the gradient magnitude, using: 
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_math_operations.png)
+
+Using this information, we can also calculate the gradient's direction: 
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png)
