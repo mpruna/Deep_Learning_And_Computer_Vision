@@ -222,6 +222,15 @@ Using this information, we can also calculate the gradient's direction:
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png)
 
+### Laplacian edge detection:
+
+* Unlike the Sobel edge detector, the Laplacian edge detector uses only one kernel.
+* It calculates second order derivatives in a single pass and detects zero crossing.
+* Second order derivatives are generally extremely sensitive to noise.
+* If we use gradient edge detection the edge of a image is determined by the absolute high point, where as for the Laplacian function it is the zero point where we go from positive to negative.
+* The Laplacian kernel is:
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_vs_laplacian.png)
 
 References:
 
