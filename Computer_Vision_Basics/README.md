@@ -232,6 +232,16 @@ Using this information, we can also calculate the gradient's direction:
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_vs_laplacian.png)
 
+### Canny Edge detection
+
+* Smoothing: Smooth the image with a Gaussian filter with spread σ
+* Gradient: Compute gradient magnitude and direction at each pixel of the smoothed image
+* Non-maximum suppression (thinning): Zero out all pixels that are not the maximum along the direction of the
+gradient (look at 1 pixel on each side)
+* Thresholding: Threshold the gradient magnitude image such that strong edges are kept and noise is suppressed
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_edge_detection)
+
 References:
 
 * https://en.wikipedia.org/wiki/Sobel_operator
