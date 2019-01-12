@@ -220,4 +220,14 @@ The x-coordinate is defined here as increasing in the "right"-direction, and the
 
 Using this information, we can also calculate the gradient's direction: 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png_
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png)
+
+
+References:
+
+ https://en.wikipedia.org/wiki/Sobel_operator
+ https://en.wikipedia.org/wiki/Edge_detection
+ https://pdfs.semanticscholar.org/6bca/fdf33445585966ee6fb3371dd1ce15241a62.pdf
+ https://homepages.inf.ed.ac.uk/rbf/HIPR2/sobel.htm
+
+
