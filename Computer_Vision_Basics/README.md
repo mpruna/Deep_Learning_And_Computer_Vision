@@ -234,11 +234,27 @@ Using this information, we can also calculate the gradient's direction:
 
 ### Canny Edge detection
 
-* Smoothing: Smooth the image with a Gaussian filter with spread σ
-* Gradient: Compute gradient magnitude and direction at each pixel of the smoothed image
-* Non-maximum suppression (thinning): Zero out all pixels that are not the maximum along the direction of the
+ 1 Smoothing: Smooth the image with a Gaussian filter with spread σ
+ 
+ 2 Gradient: Compute gradient magnitude and direction at each pixel of the smoothed image
+ 
+ 3 Non-maximum suppression (thinning): Zero out all pixels that are not the maximum along the direction of the
 gradient (look at 1 pixel on each side)
-* Thresholding: Threshold the gradient magnitude image such that strong edges are kept and noise is suppressed
+ 
+ 4 Thresholding: Threshold the gradient magnitude image such that strong edges are kept and noise is suppressed
+
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_steps.png)
+
+3 Non-maximum suppression is applied. This removes pixels that are not considered to be part of an edge. Hence, only thin lines (candidate edges) will remain.
+
+4 Hysteresis: The final step. Canny does use two thresholds (upper and lower):
+
+    If a pixel gradient is higher than the upper threshold, the pixel is accepted as an edge
+    If a pixel gradient value is below the lower threshold, then it is rejected.
+    If the pixel gradient is between the two thresholds, then it will be accepted only if it is connected to a pixel that is above the upper threshold.
+
+Canny recommended a upper:lower ratio between 2:1 and 3:1.
+
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_edge_detection)
 
