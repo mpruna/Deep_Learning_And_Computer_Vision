@@ -230,7 +230,7 @@ Using this information, we can also calculate the gradient's direction:
 * If we use gradient edge detection the edge of a image is determined by the absolute high point, where as for the Laplacian function it is the zero point where we go from positive to negative.
 * The Laplacian kernel is:
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_vs_laplacian.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_vs_laplace.png)
 
 ### Canny Edge detection
 
@@ -256,7 +256,7 @@ gradient (look at 1 pixel on each side)
 Canny recommended a upper:lower ratio between 2:1 and 3:1.
 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_edge_detection)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_edge_detection.png)
 
 References:
 
