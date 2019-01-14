@@ -6,7 +6,7 @@
 
 ### Image Transformtation
 
-![IMG](image_transformation.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/image_transformation.png)
 
 ### Image Roation
 
@@ -14,7 +14,7 @@
 * A rotation matrix is a matrix used to perform rotation in Euclidean space.
 * It rotates points in the xy-plane counter clockwise through an angle θ about the origin.
 
-![IMG](image_rotation.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/image_rotation.png)
 
 ### Image Translation
 
@@ -27,4 +27,4 @@
 * Preferable interpolation methods are cv.INTER_AREA for shrinking and cv.INTER_CUBIC for zooming.
 * By default, interpolation method used is cv.INTER_LINEAR for all resizing purposes.
 
-![IMG](image_resize)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/image_resize.png)
