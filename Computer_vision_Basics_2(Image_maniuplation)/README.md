@@ -28,3 +28,11 @@
 * By default, interpolation method used is cv.INTER_LINEAR for all resizing purposes.
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/image_resize.png)
+
+References:
+    
+    https://root.cern.ch/TaligentDocs/TaligentOnline/DocumentRoot/1.0/Docs/books/GS/GS_27.html
+    https://sites.tufts.edu/autonomousvehicles/?p=30
+    https://epsil.github.io/fisheye/
+
+    
