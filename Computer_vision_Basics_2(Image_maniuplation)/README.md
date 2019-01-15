@@ -35,4 +35,12 @@ References:
     https://sites.tufts.edu/autonomousvehicles/?p=30
     https://epsil.github.io/fisheye/
 
-    
+### Perspective Transformation
+
+* Image transformations are used to correct distortions and/or change perspectives.
+* Projective transformation (Non-affine) does not preserve parallelism, length, and angle.
+M = cv2.getPerspectiveTransform(Source_points, Destination_points)
+warped = cv2.warpPerspective(image, M, (width, height))
+* M: Transformation matrix
+
+!IMG[](image_transform.png)
