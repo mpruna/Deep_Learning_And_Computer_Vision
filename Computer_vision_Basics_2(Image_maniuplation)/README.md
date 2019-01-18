@@ -43,14 +43,14 @@ M = cv2.getPerspectiveTransform(Source_points, Destination_points)
 warped = cv2.warpPerspective(image, M, (width, height))
 * M: Transformation matrix
 
-![IMG](image_transform.png)
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/image_transform.png)
 
 
 ### Image cropping
 
 * Image cropping(selecting a part of the immage) can be performed as follows:
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/cropped_image.png)
 
 ### Dilation and Erosion
 
@@ -58,7 +58,7 @@ warped = cv2.warpPerspective(image, M, (width, height))
 * Erosion means removing pixels at the boundaries of objects in an image
 * Image dilation and erosion can be performed as follows:
 
-!IMG[]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/dilation_erosion_2.png)
 
 ### OpenCV has this in reverse
 
@@ -68,7 +68,7 @@ means increasing thickness of the letters!)
 letters appear thinner!)
 * From OpenCV standpoint Erosion means Dilation
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/erorion_dilation.png)
 
 
 ### Region of interest masking
@@ -82,4 +82,4 @@ letters appear thinner!)
 * fill the area with black pixels
 * apply that area as a mask & perform matrix "and operation"  
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/erorion_dilation.png))
