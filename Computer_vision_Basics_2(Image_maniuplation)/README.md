@@ -82,4 +82,4 @@ letters appear thinner!)
 * fill the area with black pixels
 * apply that area as a mask & perform matrix "and operation"  
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/erorion_dilation.png))
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/region_of_interest.png))
