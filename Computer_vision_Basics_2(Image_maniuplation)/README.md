@@ -83,3 +83,47 @@ letters appear thinner!)
 * apply that area as a mask & perform matrix "and operation"  
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/region_of_interest.png))
+
+### Hought Transform
+
+* A line can be represented with one of the two forms below.
+* ρ is the perpendicular distance from origin to the line.
+* θ is the angle formed by this perpendicular line and horizontal axis.
+
+![IMG]()
+
+### How to get Hough Transform
+
+* In image space, a line is plotted as x vs. y and modeled as y = mx + b or x cos(θ) + y sin(θ) = ρ
+* In parameter space (hough), a line is represented by a point in "m vs. b“.
+* Each line is represented as a single point with (m, b) coordinates or (ρ, θ) parameters.
+
+![IMG]()
+
+### Hough Transform example
+
+* Assume 100x100 image with horizontal line in the middle.
+* First we create a 2D matrix or accumulator (to hold values of two parameters) and set it to 0.
+* Select the first point on the line and try θ values from 0, 1, 2, ..180 and check the obtained value of ρ
+* For every (ρ, θ) pair, increment an accumulator by 1 which means cell (50, 90) will be incremented by one
+* Try next point, and repeat procedure.
+* Cell (50, 90) will be voted up, the accumulator with maximum votes indicates a line!
+
+![IMG]()
+
+### Hough Transform flow
+
+* We ususaly use hough transform to detect features such as lines, this is typically done using an edge detector like Sobel, Canny
+* In an infinite point space a line can be represented by the slope (angle of the line) and the intercept line passing through that point.
+
+![IMG]()
+
+* Or a line can be represented in polar space 
+
+![IMG]()
+
+* The goal of the Hough Transform is to find out all the point in a edge detected image that would consitute a line.
+* You taken an edge detected image, and for every point that is non black, you draw lines in the mc place. Obviously, some lines will intersect. These intersections mark are the parameters of the line.
+* Where point have similar values then we can assume they represent the same line
+
+![IMG]()
