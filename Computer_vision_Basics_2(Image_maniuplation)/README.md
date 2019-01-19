@@ -84,13 +84,13 @@ letters appear thinner!)
 
 ![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/region_of_interest.png))
 
-### Hought Transform
+### Hough Transform
 
 * A line can be represented with one of the two forms below.
 * ρ is the perpendicular distance from origin to the line.
 * θ is the angle formed by this perpendicular line and horizontal axis.
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/line_representation.png)
 
 ### How to get Hough Transform
 
@@ -98,7 +98,7 @@ letters appear thinner!)
 * In parameter space (hough), a line is represented by a point in "m vs. b“.
 * Each line is represented as a single point with (m, b) coordinates or (ρ, θ) parameters.
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/hough_transformt.png)
 
 ### Hough Transform example
 
@@ -109,21 +109,27 @@ letters appear thinner!)
 * Try next point, and repeat procedure.
 * Cell (50, 90) will be voted up, the accumulator with maximum votes indicates a line!
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/hugh_space.png)
 
 ### Hough Transform flow
 
 * We ususaly use hough transform to detect features such as lines, this is typically done using an edge detector like Sobel, Canny
 * In an infinite point space a line can be represented by the slope (angle of the line) and the intercept line passing through that point.
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/line_in_mc_space.png)
 
 * Or a line can be represented in polar space 
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/line_in_polar.png)
 
 * The goal of the Hough Transform is to find out all the point in a edge detected image that would consitute a line.
 * You taken an edge detected image, and for every point that is non black, you draw lines in the mc place. Obviously, some lines will intersect. These intersections mark are the parameters of the line.
 * Where point have similar values then we can assume they represent the same line
 
-![IMG]()
+![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/Computer_vision_Basics_2(Image_maniuplation)/images/possible_line_space.png)
+
+References:
+
+* https://en.wikipedia.org/wiki/Hough_transform
+* http://www.aishack.in/tutorials/hough-transform-basics/
+* https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.html
