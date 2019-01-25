@@ -5,7 +5,7 @@
 * A feature may be a color or a detected edge.
 * A good feature has to be repeatable, i.e.: if feature can be detected in two or more different images of the same scene.
 
-![IMG]()
+![IMG](".images/feature_detection.png")
 
 ### FEATURE IMPORTANCE
 
