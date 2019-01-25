@@ -67,6 +67,10 @@ directions.
     
 ![IMG](images/cornersedges_as_features.png)
 
+### Edge Detection a simple example:
+
+![IMG](images/edge_detection_ex.png)
+
 ### CORNER AND EDGE DETECTION LIMITATION
 
 * Detecting corners as features in images can work well even of the image is:
@@ -78,5 +82,10 @@ directions.
     
 ![IMG](images/corneredges_limitations.png)
 
+
 References:
 * https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html
+* https://www.docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/template_matching/template_matching.html
+* https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_features_harris/py_features_harris.html
+* http://www.cse.psu.edu/~rtc12/CSE486/lecture06.pdf
+* https://en.wikipedia.org/wiki/Harris_Corner_Detector
