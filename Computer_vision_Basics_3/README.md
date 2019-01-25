@@ -48,3 +48,34 @@ template.
 
 References:
 * https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html
+
+### CORNERS AND EDGES AS FEATURES
+
+* Edges are identified when change in intensity is noticed in one direction.
+* Corners are identified when shifting a window in any direction over that point gives a large change in intensity in all
+directions.
+
+![IMG](images/corners_and_egdes.png)
+
+### CORNERS AND EDGES AS FEATURES
+
+* Corners are regions in the image with large variation in intensity in all the directions.
+* Harris corner detection finds the difference in intensity for a displacement of u, v in all directions.
+* OpenCV has the function **cv2.cornerHarris(img, block size, ksize, k)**
+    * img - Input image, it should be grayscale and float32 type.
+    * blockSize - It is the size of neighbourhood considered for corner detection
+    * ksize - Aperture parameter of Sobel derivative used.
+    * k - Harris detector free parameter in the equation (set to 0.1).
+    
+![IMG](images/cornersedges_as_features.png)
+
+### CORNER AND EDGE DETECTION LIMITATION
+
+* Detecting corners as features in images can work well even of the image is:
+    * Rotated, Translated and experienced changes in brightness
+    * I.e.: even if the image is rotated, we can still find the same corners.
+* The technique is challenged if the image is enlarged (scaling issues).
+    * A corner may not be a corner if the image is scaled.
+    * A corner in a small image would result in multiple corners in a zoomed-in larger image.
+    
+![IMG](corneredges_limitations.png)
