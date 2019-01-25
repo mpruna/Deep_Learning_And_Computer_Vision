@@ -46,8 +46,6 @@ template.
 * Driving conditions such as weather, brightness and contrast.
 * Perspective will challenge the technique.
 
-References:
-* https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html
 
 ### CORNERS AND EDGES AS FEATURES
 
@@ -78,4 +76,7 @@ directions.
     * A corner may not be a corner if the image is scaled.
     * A corner in a small image would result in multiple corners in a zoomed-in larger image.
     
-![IMG](corneredges_limitations.png)
+![IMG](images/corneredges_limitations.png)
+
+References:
+* https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html
