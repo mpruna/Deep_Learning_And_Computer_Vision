@@ -16,26 +16,26 @@
 
 ### OBJECT (TRUCK) DETECTION
 * Our goal is to find objects (truck) in this image using template matching.
-* OpenCV has functions to perform this easily: cv2.matchTemplate(), cv2.minMaxLoc()
+* OpenCV has functions to perform this easily: **cv2.matchTemplate(), cv2.minMaxLoc()**
 
 ![IMG](images/truck_detection_via_template.png)
 
 ### TEMPLATE MACTHING
 
-* cv2.matchTemplate() simply slides the template image over the input image (as in 2D convolution) and compares the
+* **cv2.matchTemplate()** simply slides the template image over the input image (as in 2D convolution) and compares the
 template and patch of input image under the template image.
 * The function returns a grayscale image, where each pixel denotes how much does the neighbourhood of that pixel
 match with template.
 * If input image is of size (WxH) and template image is of size (wxh), output image will have a size of (W-w+1, H-h+1).
-* Once you got the result, cv2.minMaxLoc() function is used to find where is the maximum/minimum value. Take it as
+* Once you got the result, **cv2.minMaxLoc()** function is used to find where is the maximum/minimum value. Take it as
 the top-left corner of rectangle and take (w,h) as width and height of the rectangle. That rectangle is the region of
 template.
 
 ![IMG](images/template_matching.png)
 
 
-* cv2.matchTemplate() simply slides the template image over the input image using one of the methods:
-method=CV_TM_CCORR_NORMED
+* **cv2.matchTemplate()** simply slides the template image over the input image using one of the methods:
+**method=CV_TM_CCORR_NORMED**
 * The function slides through image I, compare it to the template T and generate a result image R
 * The summation is done over template and/or the image patch
 
