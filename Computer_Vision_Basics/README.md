@@ -264,5 +264,4 @@ References:
 * https://en.wikipedia.org/wiki/Edge_detection
 * https://pdfs.semanticscholar.org/6bca/fdf33445585966ee6fb3371dd1ce15241a62.pdf
 * https://homepages.inf.ed.ac.uk/rbf/HIPR2/sobel.htm
-
-
+* https://medium.freecodecamp.org/an-intuitive-guide-to-convolutional-neural-networks-260c2de0a050
