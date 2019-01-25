@@ -32,7 +32,7 @@ the top-left corner of rectangle and take (w,h) as width and height of the recta
 template.
 
 
-• cv2.matchTemplate() simply slides the template image over the input image using one of the methods:
+* cv2.matchTemplate() simply slides the template image over the input image using one of the methods:
 method=CV_TM_CCORR_NORMED
-• The function slides through image I, compare it to the template T and generate a result image R
-• The summation is done over template and/or the image patch
+* The function slides through image I, compare it to the template T and generate a result image R
+* The summation is done over template and/or the image patch
