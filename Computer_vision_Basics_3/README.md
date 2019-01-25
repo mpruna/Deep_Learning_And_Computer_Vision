@@ -12,13 +12,13 @@
 * Image Features are critical in machine learning and self-driving cars because they can be used to analyze, describe and match images.
 * Features can be used to train a classifier to detect objects such as pedestrians and cars.
 
-![IMG]()
+![IMG](images/features_classifiers.png)
 
 ### OBJECT (TRUCK) DETECTION
 * Our goal is to find objects (truck) in this image using template matching.
 * OpenCV has functions to perform this easily: cv2.matchTemplate(), cv2.minMaxLoc()
 
-![IMG]()
+![IMG](images/truck_detection_via_template.png)
 
 ### TEMPLATE MACTHING
 
@@ -31,9 +31,20 @@ match with template.
 the top-left corner of rectangle and take (w,h) as width and height of the rectangle. That rectangle is the region of
 template.
 
+![IMG](images/template_matching.png)
 
 
 * cv2.matchTemplate() simply slides the template image over the input image using one of the methods:
 method=CV_TM_CCORR_NORMED
 * The function slides through image I, compare it to the template T and generate a result image R
 * The summation is done over template and/or the image patch
+
+![IMG](images/math_formula.png)
+
+* Template has to be in the same orientation as in the original image (No rotation is allowed).
+* Image sizing and scale is a challenge.
+* Driving conditions such as weather, brightness and contrast.
+* Perspective will challenge the technique.
+
+References:
+
