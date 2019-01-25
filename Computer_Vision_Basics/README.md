@@ -3,7 +3,7 @@
 Science that allows computers to understand images and video and 
 determine what the computer "sees" or "recognizes”.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/human_computer_vision.png))
+![IMG](../images/human_computer_vision.png))
 
 #### Computer Vision can be used for:
  - object clasification
@@ -20,31 +20,31 @@ determine what the computer "sees" or "recognizes”.
 * License plate numbers detection
 * Snapchat filters
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/computer_vision_use_cases.png)
+![IMG](../images/computer_vision_use_cases.png)
 
 One of the challenges in computer vision is the object classification. An object can be presented at a different angle, different lighting, different shape.
 While is it's easier for humans to classify these objects we need to teach a computer to do the same.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/computer_vision_chalanges.png)
+![IMG](../images/computer_vision_chalanges.png)
 
 ### View point limitations
 
 Example below shows an example where the view point can cause some problems. In the picture we see Toronto Tower but from a different angle.
 We need to train the algorithm to recognize those images as instances of the same object.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/image_view_point.png)
+![IMG](../images/image_view_point.png)
 
 ### Camera resolution limitations
 
 As the resolution gets better we can see an object in greater detail. Part of the challenge is to do image correction in a low resolution image
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/camera_resolution.png)
+![IMG](../images/camera_resolution.png)
 
 ### Lighting limitations
 
 It's hard to extract the object features when is dark.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/scaling_limitations.png)
+![IMG](../images/scaling_limitations.png)
 
 
 Requirements for an artificial eye to convert a conventional vehicle into autonomous one
@@ -61,7 +61,7 @@ Overall human eyes provide acceptable vision in a very narrow field of view faci
 For the camera we would like to develop computer vision algorithms and machine learning algorithms to actually
 start  detect all kinds of objects and become even better than humans.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/self_driving_car.png)
+![IMG](../images/self_driving_car.png)
 
 Self driving cars have set of sensors that give perception of the world, and a machine learning algorithms to process sensors data and take actions.
 * Cameras : provides detailed images but require machine-learning algorithms to interpret 2-D images. 
@@ -85,7 +85,7 @@ the wavelengths of yellow light.
 * Binary systems use digits '0' and '1‘ where '00000000' for black, to '11111111' for white (8-bit image).
 * Note: binary value of '11111111' is equal to decimal value of '255'
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gray_mona_lisa.png)
+![IMG](../images/gray_mona_lisa.png)
 
 ### Colored image representation
 
@@ -93,7 +93,7 @@ the wavelengths of yellow light.
 * RGB image is split into 3 matrices corresponding to red, green, and blue channels.
 * Any other colour can be created by mixing several intensities of RGB.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/color_picture.png)
+![IMG](../images/color_picture.png)
 
 ### Digitally represent a colored image
 
@@ -101,7 +101,7 @@ the wavelengths of yellow light.
 information in total, i.e.: '24-bit colour'.
 * Assuming same number of pixels, RGB image is three times bigger in file size than a Greyscale one.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/colored_image.png)
+![IMG](../images/colored_image.png)
 
 ### Challenges of the color extracting technique for lane detection
 
@@ -110,7 +110,7 @@ information in total, i.e.: '24-bit colour'.
 * What if outside is snowing and most of the environment is covered in white
 * What if there are no demarcation signs/lanes?
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/color_selection_chalenge.png)
+![IMG](../images/color_selection_chalenge.png)
 
 
 ### Posible sollutions
@@ -142,7 +142,7 @@ primary colors.
 * The saturation dimension resembling various shades of brightly colored paint.
 * Value dimension resembling the mixture of those paints with varying amounts of black or white paint.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/HSV_color_space.png)
+![IMG](../images/HSV_color_space.png)
 
 ### RGB TO HSV
 * The Hue color ranges from 0 to 180 (not 360) in OpenCV
@@ -153,7 +153,7 @@ primary colors.
     http://www.javascripter.net/faq/rgb2hsv.htm
 * Don’t forget the 1⁄2 factor in Hue!
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/rgb_to_hsv.png)
+![IMG](../images/rgb_to_hsv.png)
 
 ### Convolutions:
 
@@ -162,20 +162,20 @@ Convolutions use a kernel matrix to scan a given image and apply a filter to obt
 * Kernels are used in machine learning for feature extraction to select most important pixels of an image.
 * Convolution preserves the spatial relationship between pixels.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions.png)
+![IMG](../images/convolutions.png)
 
 ### Convolutions: Sharpening and Blurring:
 
 * The sharpen kernel emphasizes differences in adjacent pixel values which makes the image look more vivid.
 * The technique is used to bring out detail in an image by enhancing the contrast of pixels on edges.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sharpen_matrix.png)
+![IMG](../images/sharpen_matrix.png)
 
 * The blurring kernel is used to blur a given image by averaging each pixel value and its neighbors.
 * Blurring Kernel is an NxN matrix filled with ones. Normalization has to be performed.
 * The values in the matrix has to sum to 1, if sum doesn't add to 1 then image will be brighter or darker
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/blurring.png)
+![IMG](../images/blurring.png)
 
 
 ### Convolutions definitions
@@ -189,9 +189,9 @@ The spatial size of the output volume can be computed as a function of the input
 ### Neural networks convolution formula
 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolution_neural_network.png)
+![IMG](../images/convolution_neural_network.png)
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/convolutions_at_work.gif)
+![IMG](../images/convolutions_at_work.gif)
 
 ### Edge detection and gradient calculation
 
@@ -212,15 +212,15 @@ has discontinuities.
 If we define A as the source image, and Gx and Gy are two images which at each point contain the vertical and horizontal derivative approximations respectively.
 In theory at least, the operator consists of a pair of 3×3 convolution kernels as shown in Figure 1. One kernel is simply the other rotated by 90°. This is very similar to the Roberts Cross operator.
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_kernels.png)
+![IMG](../images/sobel_kernels.png)
 
 The x-coordinate is defined here as increasing in the "right"-direction, and the y-coordinate is defined as increasing in the "down"-direction. At each point in the image, the resulting gradient approximations can be combined to give the gradient magnitude, using: 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_math_operations.png)
+![IMG](../images/sobel_math_operations.png)
 
 Using this information, we can also calculate the gradient's direction: 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/gradient_direction.png)
+![IMG](../images/gradient_direction.png)
 
 ### Laplacian edge detection:
 
@@ -230,7 +230,7 @@ Using this information, we can also calculate the gradient's direction:
 * If we use gradient edge detection the edge of a image is determined by the absolute high point, where as for the Laplacian function it is the zero point where we go from positive to negative.
 * The Laplacian kernel is:
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/sobel_vs_laplace.png)
+![IMG](../images/sobel_vs_laplace.png)
 
 ### Canny Edge detection
 
@@ -243,7 +243,7 @@ gradient (look at 1 pixel on each side)
  
  4 Thresholding: Threshold the gradient magnitude image such that strong edges are kept and noise is suppressed
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_steps.png)
+![IMG](../images/canny_steps.png)
 
 3 Non-maximum suppression is applied. This removes pixels that are not considered to be part of an edge. Hence, only thin lines (candidate edges) will remain.
 
@@ -256,7 +256,7 @@ gradient (look at 1 pixel on each side)
 Canny recommended a upper:lower ratio between 2:1 and 3:1.
 
 
-![IMG](https://github.com/mpruna/Deep_Learning_And_Computer_Vision/blob/master/images/canny_edge_detection.png)
+![IMG](../images/canny_edge_detection.png)
 
 References:
 
@@ -264,4 +264,5 @@ References:
 * https://en.wikipedia.org/wiki/Edge_detection
 * https://pdfs.semanticscholar.org/6bca/fdf33445585966ee6fb3371dd1ce15241a62.pdf
 * https://homepages.inf.ed.ac.uk/rbf/HIPR2/sobel.htm
-* https://medium.freecodecamp.org/an-intuitive-guide-to-convolutional-neural-networks-260c2de0a050
+* 
+https://medium.freecodecamp.org/an-intuitive-guide-to-convolutional-neural-networks-260c2de0a050
