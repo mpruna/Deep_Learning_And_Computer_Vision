@@ -200,7 +200,7 @@ has discontinuities.
 * Edge detection is important tool in computer vision especially for feature extraction/detection
 * Below you can see a first grade edge detection where the pixel value chan change rapidly from either a bright color to a dark one pr vice-versa..
 
-![IMG](images/edge_detection.png)
+![IMG](../images/edge_detection.png)
 
 ### Edge Detection and Gradient Descent calculation: Sobel method
 
