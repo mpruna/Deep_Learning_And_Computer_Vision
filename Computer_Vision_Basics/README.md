@@ -72,9 +72,9 @@ Self driving cars have set of sensors that give perception of the world, and a m
 ### Representing images in digital format
 
 How human eye perceives an object:
-• Waves are observed by the human eye and translated in the visual cortex into color.
-• When you look at a banana, the wavelengths of reflected light determine what color you see.
-• The light waves reflect off the banana and hit your eye has a wavelengths of 570 to 580 nanometers. These are
+* Waves are observed by the human eye and translated in the visual cortex into color.
+* When you look at a banana, the wavelengths of reflected light determine what color you see.
+* The light waves reflect off the banana and hit your eye has a wavelengths of 570 to 580 nanometers. These are
 the wavelengths of yellow light.
 
 ### Representing an image on a gray scale
@@ -200,7 +200,7 @@ has discontinuities.
 * Edge detection is important tool in computer vision especially for feature extraction/detection
 * Below you can see a first grade edge detection where the pixel value chan change rapidly from either a bright color to a dark one pr vice-versa..
 
-![IMG]()
+![IMG](Deep_Learning_And_Computer_Vision/images/edge_detection.png)
 
 ### Edge Detection and Gradient Descent calculation: Sobel method
 
