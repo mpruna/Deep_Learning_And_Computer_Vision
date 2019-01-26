@@ -166,6 +166,10 @@ Step 2:
 
 ![IMG](images/histogram_xy_representation.png)
 
+### HOG FEATURE REPRESENTATION BY PERIMETER
+
+![IMG](images/hog_features_representation_by_perimeter.png)
+
 ### Mathematical notions
 
 In mathematics, the gradient is a multi-variable generalization of the derivative. While a derivative can be defined on functions of a single variable, for functions of several variables, the gradient takes its place. The gradient is a vector-valued function, as opposed to a derivative, which is scalar-valued. 
