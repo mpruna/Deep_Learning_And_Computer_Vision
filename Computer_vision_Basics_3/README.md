@@ -193,7 +193,7 @@ The slope represents the **(change in y)/(change in x)**
 
 ### Tangent
 
-![IMG](image/Tangent_animation.gif)
+![IMG](images/Tangent_animation.gif)
 
 References:
 
