@@ -199,6 +199,19 @@ The slope represents the **(change in y)/(change in x)**
 
 ![IMG](images/Tangent_animation.gif)
 
+### FAST/SURF/ORB/SIFT FEATURE DETECTORS
+
+1. Select a pixel p in the image which is to be identified as an interest point
+2. Get its intensity I p .
+3. Select appropriate threshold value t.
+4. Consider a circle of 16 pixels around the pixel under test.
+5. Pixel p is a corner if there exists a set of contiguous pixels in the circle which are all brighter than I p + t, or all darker than I p − t.
+6. A high-speed test that only four pixels at 1, 9, 5 and 13. If p is a corner, then at least three of these must all be brighter than I p + t or darker
+than I p − t. If neither of these is the case, then p cannot be a corner.
+* Other feature detectors: SIFT, SURF, ORB (Oriented FAST and Rotated BRIEF an efficient alternative to SIFT or SURF proposed in 2011)
+
+![IMG](images/other_feature_detectors.png)
+
 References:
 
 * https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html
@@ -210,3 +223,4 @@ References:
 * https://stackoverflow.com/questions/19815732/what-is-gradient-orientation-and-gradient-magnitude/19816362#19816362
 * https://en.wikipedia.org/wiki/Gradient
 * https://en.wikipedia.org/wiki/Derivative
+* https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_fast/py_fast.html
