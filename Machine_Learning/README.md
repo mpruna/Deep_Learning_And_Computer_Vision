@@ -136,7 +136,32 @@ It is a measure of the discrepancy between the data and an estimation model. A s
 
 ![IMG](images/RSS.png)
 
+### LOGISTIC REGRESSION
+
+* regression for binary (yes/no) problems
+* like linear regression, but final predictions are transformed into a 0-1 range
+* we might think of it as a probability of the answer to be either **"yes/no"**
+
+### LOGISTIC/SIGMOID FUNCTION
+
+Logistic regression is just a binary classification.  So this allows us to transform our final predicted number which is between 0 and 1 into some other function.
+If a point ends up above 0.5 we can predict a 1.
+If it's below 0.5 we can predict it's a zero
+
+What is going on here it's translating the  output of logistic regression itself into a probability of it either being **1 or 0 yes or no**.
+
+![IMG](images/sigmoid_function.png)
+
+### LOSS FUNCTION FOR LOGISTIC REGRESSION
+
+* least-squares won’t work with the logistic curve
+* instead we use gradient descent with maximum likelihood
+* this just iterates to maximize the conditional probability of Y given X
+
+
 Resources:
-    * https://www.quora.com/What-is-cross-validation-in-machine-learning
-    * https://en.wikipedia.org/wiki/Overfitting
-    *https://en.wikipedia.org/wiki/Residual_sum_of_squares
+
+ * https://www.quora.com/What-is-cross-validation-in-machine-learning
+ * https://en.wikipedia.org/wiki/Overfitting
+ * https://en.wikipedia.org/wiki/Residual_sum_of_squares
+ 
