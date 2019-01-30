@@ -193,6 +193,11 @@ What is going on here it's translating the  output of logistic regression itself
 
 ![IMG](images/random_forest.png)
 
+To visualize the decision trees in a flow chart fashin we need to install `pydotplus` package:
+
+```conda install pydotplus```
+
+
 
 Resources:
 
