@@ -158,6 +158,41 @@ What is going on here it's translating the  output of logistic regression itself
 * instead we use gradient descent with maximum likelihood
 * this just iterates to maximize the conditional probability of Y given X
 
+### DECISION TREES
+
+* you can  construct a flowchart to help you decide a classification for something with machine learning
+* this is called a decision tree
+* another form of supervised learning
+* Give it some sample data and the resulting classifications gives a decision tree
+
+### DECISION TREES EXAMPLE
+
+* you want to build a system to filter out resumes based on historical hiring data
+* you have a database of some important attributes of job candidates, and you know which ones were hired and which ones weren’t
+* you can train a decision tree on this data, and arrive at a system for predicting whether a candidate will get hired based on it!
+
+ ![IMG](images/CV_blob.png)
+
+### FLOW CHART EXAMPLE
+
+![IMG](images/flow_chart_example.png)
+
+### HOW DECISION TREES WORK
+
+* at each step, find the attribute we can use to partition the data set to minimize the entropy of the data at the next step
+* The scientific term for the algorithm: ID3
+* it is a greedy algorithm – as it goes down the tree, it just picks the decision that reduce entropy the most at that stage.
+* that might not actually result in an optimal tree, but it works.
+
+### RANDOM FOREST(OR RANDOM DECISION TREES) 
+
+* decision trees are very susceptible to overfitting
+* to fight this, we can construct several alternate decision trees and let them “vote” on the final classification
+* randomly re-sample the input data for each tree (fancy term for this: bootstrap aggregating or bagging)
+* randomize a subset of the attributes each step is allowed to choose from
+
+![IMG](images/random_forest.png)
+
 
 Resources:
 
